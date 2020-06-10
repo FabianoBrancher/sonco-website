@@ -1,0 +1,16 @@
+{
+  "name": "sonco",
+  "description": "Case study page sonco",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Fabiano <fabiano.brancher@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css --watch",
+    "watch:sass": "nodemon -e sass -x \"npm run compile:sass\""
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}

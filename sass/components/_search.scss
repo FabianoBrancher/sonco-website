@@ -1,0 +1,39 @@
+.search {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__input {
+    width: 90%;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    background-color: $color-grey-light-2;
+    transition: all 0.2s;
+    margin-right: -3.25rem;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__button {
+    color: $color-secondary;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+  }
+}

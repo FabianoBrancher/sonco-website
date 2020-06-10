@@ -1,0 +1,147 @@
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__item {
+    display: flex;
+    height: 3.5rem;
+    align-items: center;
+  }
+
+  &__item--bgblue {
+    text-transform: uppercase;
+    background-color: $color-primary;
+  }
+
+  &__link {
+    padding: 0 2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+
+.contact-cart-calc-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  display: flex;
+  line-height: 2rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: $color-primary;
+    text-transform: uppercase;
+  }
+
+  &__phone {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+  }
+}
+
+.cart,
+.calculator {
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    color: $color-secondary;
+    padding: 1rem;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: currentColor;
+  }
+
+  &__quantity {
+    font-size: 1.4rem;
+    color: $color-primary;
+  }
+}
+
+.section-banner {
+  padding-top: 1rem;
+  position: relative;
+  text-align: center;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+    line-height: 1;
+    left: 0;
+    bottom: 10rem;
+    font-size: 5rem;
+    text-align: start;
+    font-weight: bold;
+    position: absolute;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+}
+
+.section-banner-content {
+  position: relative;
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-teams {
+  padding: 10rem 0;
+  margin-top: -0.5rem;
+  background-color: $color-primary;
+  border-bottom: 1px solid $color-grey-light-2;
+
+  &__logos {
+    width: auto;
+    height: auto;
+  }
+
+  &__logos--harley {
+    width: 10rem;
+    height: auto;
+    opacity: 0.6;
+  }
+
+  &__paragraph {
+    opacity: 0.3;
+    padding: 5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+}
+
+.section-teams-content {
+  display: flex;
+  margin: 0 auto;
+  max-width: 120rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-teams-logos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
