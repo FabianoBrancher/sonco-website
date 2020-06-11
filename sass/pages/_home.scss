@@ -84,9 +84,9 @@
   }
 
   &__title {
-    line-height: 1;
     left: 0;
     bottom: 10rem;
+    line-height: 1;
     font-size: 5rem;
     text-align: start;
     font-weight: bold;
@@ -106,8 +106,8 @@
 .section-teams {
   padding: 10rem 0;
   margin-top: -0.5rem;
+  border-bottom: $line;
   background-color: $color-primary;
-  border-bottom: 1px solid $color-grey-light-2;
 
   &__logos {
     width: auto;
@@ -145,3 +145,84 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.section-stray {
+  width: 100%;
+  background-color: $color-primary;
+}
+
+.section-stray-content {
+  margin: 0 auto;
+  display: flex;
+  max-width: 120rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stray-info {
+  display: flex;
+  padding-top: 10rem;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.stray-about {
+  flex: 0 0 33%;
+  display: flex;
+  color: $color-white;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 2.3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    padding: 2.5rem 0;
+    font-size: 1.4rem;
+  }
+}
+
+.stray-pictures {
+  flex: 0 0 33%;
+  display: flex;
+  position: relative;
+
+  &__image {
+    width: 100%;
+
+    &--img1 {
+      z-index: 2;
+      position: relative;
+    }
+
+    &--img2 {
+      z-index: 1;
+      right: -32rem;
+      bottom: -20rem;
+      position: absolute;
+    }
+  }
+}
+
+.stray-logo {
+  display: flex;
+  flex: 0 0 33%;
+  padding-left: 5rem;
+
+  &__logo {
+    width: 18rem;
+    height: auto;
+  }
+}
+
+.stray-video {
+  display: flex;
+  padding: 3.5rem 0;
+  flex-direction: row;
+}
+

@@ -1,0 +1,19 @@
+.button {
+  border: none;
+  width: 17.2rem;
+  height: 4.2rem;
+  color: $color-white;
+  background-color: #E52333;
+  cursor: pointer;
+
+  &:active {
+    border: none;
+    outline: none;
+
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}

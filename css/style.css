@@ -60,6 +60,20 @@ body {
   margin: 0 auto;
   max-width: 120rem; }
 
+.button {
+  border: none;
+  width: 17.2rem;
+  height: 4.2rem;
+  color: #fff;
+  background-color: #E52333;
+  cursor: pointer; }
+  .button:active {
+    border: none;
+    outline: none; }
+  .button:focus {
+    border: none;
+    outline: none; }
+
 .logo {
   width: 17.5rem;
   height: auto; }
@@ -115,7 +129,7 @@ body {
     height: 1.1rem;
     mask-size: cover;
     margin-left: 0.8rem;
-    transition: all 0.2s;
+    transition: all 0.8s;
     display: inline-block;
     transform: rotate(0deg);
     -webkit-mask-size: cover;
@@ -200,9 +214,9 @@ body {
   .section-banner__image {
     width: 100%; }
   .section-banner__title {
-    line-height: 1;
     left: 0;
     bottom: 10rem;
+    line-height: 1;
     font-size: 5rem;
     text-align: start;
     font-weight: bold;
@@ -219,8 +233,8 @@ body {
 .section-teams {
   padding: 10rem 0;
   margin-top: -0.5rem;
-  background-color: #032e5a;
-  border-bottom: 1px solid #f0f1f1; }
+  border-bottom: 1px solid rgba(221, 221, 221, 0.1);
+  background-color: #032e5a; }
   .section-teams__logos {
     width: auto;
     height: auto; }
@@ -249,3 +263,64 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between; }
+
+.section-stray {
+  width: 100%;
+  background-color: #032e5a; }
+
+.section-stray-content {
+  margin: 0 auto;
+  display: flex;
+  max-width: 120rem;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.stray-info {
+  display: flex;
+  padding-top: 10rem;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.stray-about {
+  flex: 0 0 33%;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: space-between; }
+  .stray-about__title {
+    font-size: 2.3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .stray-about__description {
+    padding: 2.5rem 0;
+    font-size: 1.4rem; }
+
+.stray-pictures {
+  flex: 0 0 33%;
+  display: flex;
+  position: relative; }
+  .stray-pictures__image {
+    width: 100%; }
+    .stray-pictures__image--img1 {
+      z-index: 2;
+      position: relative; }
+    .stray-pictures__image--img2 {
+      z-index: 1;
+      right: -32rem;
+      bottom: -20rem;
+      position: absolute; }
+
+.stray-logo {
+  display: flex;
+  flex: 0 0 33%;
+  padding-left: 5rem; }
+  .stray-logo__logo {
+    width: 18rem;
+    height: auto; }
+
+.stray-video {
+  display: flex;
+  padding: 3.5rem 0;
+  flex-direction: row; }
