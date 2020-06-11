@@ -69,6 +69,17 @@ body {
     .header {
       max-width: 100%; } }
 
+.footer {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 5rem 0;
+  max-width: 120rem; }
+  .footer__logo {
+    flex: 0 0 23%;
+    display: flex;
+    align-items: center; }
+
 .container {
   width: 100%;
   display: flex;
@@ -170,7 +181,7 @@ body {
     padding: 1.5rem 2rem 1.5rem 0; }
 
 .about {
-  flex: 1;
+  flex: 0 0 33%;
   display: flex;
   color: #fff;
   flex-direction: column;
@@ -224,7 +235,7 @@ body {
 
 .social {
   display: flex;
-  flex: 1;
+  flex: 0 0 23%;
   flex-direction: column;
   border-right: 1px solid #dddddd; }
   .social__list {
@@ -252,7 +263,7 @@ body {
     fill: #fff; }
 
 .mailing {
-  flex: 1;
+  flex: 0 0 54%;
   padding: 0 8rem;
   border-right: 1px solid #dddddd;
   margin-right: 4rem; }
@@ -282,6 +293,41 @@ body {
   .mailing__letusknow {
     color: #777;
     font-size: 1.2rem; }
+
+.links {
+  flex: 0 0 54%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  flex-direction: row;
+  border-left: 1px solid rgba(221, 221, 221, 0.8); }
+  .links__item {
+    flex: 0 0 33%;
+    padding-left: 5rem; }
+  .links__link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #999; }
+
+.contact {
+  flex: 0 0 23%;
+  display: flex;
+  list-style: none;
+  padding-left: 4rem;
+  flex-direction: column; }
+  .contact__item {
+    margin-bottom: .7rem; }
+  .contact__link {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    text-decoration: none;
+    color: #777; }
+  .contact__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+    margin-right: .5rem; }
 
 .list {
   display: flex;
@@ -441,9 +487,9 @@ body {
 
 .newsletter {
   display: flex;
-  height: 20rem;
+  height: 25rem;
   margin: 0 auto;
-  padding-top: 2rem;
+  padding: 2rem 0;
   max-width: 120rem;
   position: relative;
   justify-content: space-between;

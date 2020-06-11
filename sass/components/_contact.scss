@@ -1,0 +1,26 @@
+.contact {
+  flex: 0 0 23%;
+  display: flex;
+  list-style: none;
+  padding-left: 4rem;
+  flex-direction: column;
+
+  &__item {
+    margin-bottom: .7rem;
+  }
+  &__link {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    text-decoration: none;
+    color: $color-gray-dark-1;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+    margin-right: .5rem;
+  }
+
+}

@@ -1,0 +1,20 @@
+.links {
+  flex: 0 0 54%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  flex-direction: row;
+  border-left: $line;
+
+  &__item {
+    flex: 0 0 33%;
+    padding-left: 5rem;
+  }
+
+  &__link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $color-gray-dark-2;
+  }
+
+}
