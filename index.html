@@ -13,103 +13,95 @@
   <body>
     <div class="container">
       <div class="topbar">
-        <div class="topbar-content">
-          <ul class="list">
-            <li class="list__item">
-              <a href="#" class="list__link">
-                Login | Account
-              </a>
-            </li>
-            <li class="list__item list__item--bgblue">
-              <a href="#" class="list__link">
-                About Us
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="list">
+          <li class="list__item">
+            <a href="#" class="list__link">
+              Login | Account
+            </a>
+          </li>
+          <li class="list__item list__item--bgblue">
+            <a href="#" class="list__link">
+              About Us
+            </a>
+          </li>
+        </ul>
       </div>
 
       <header class="header">
-        <div class="header-content">
-          <a href="#" class="header__link">
-            <img src="/img/logo-sonco.png" alt="Logo Sonco" class="logo" />
+        <a href="#" class="header__link">
+          <img src="/img/logo-sonco.png" alt="Logo Sonco" class="logo" />
+        </a>
+        <img src="/img/est-1976.png" alt="est-1976" />
+
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search" />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="/img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <img src="img/phone.png" alt="Call for special deals" class="header__phone"/>
+        <div class="calculator">
+          <a href="#" class="calculator__link">
+            <svg class="calculator__icon">
+              <use xlink:href="/img/sprite.svg#icon-calculator"></use>
+            </svg>
+            <span class="calculator__quantity">(2)</span>
           </a>
-          <img src="/img/est-1976.png" alt="est-1976" />
-
-          <form action="#" class="search">
-            <input type="text" class="search__input" placeholder="Search" />
-            <button class="search__button">
-              <svg class="search__icon">
-                <use xlink:href="/img/sprite.svg#icon-magnifying-glass"></use>
-              </svg>
-            </button>
-          </form>
-
-          <div class="contact-cart-calc-box">
-            <div class="contact">
-              <span class="contact__title">Call for special deals</span>
-              <span class="contact__phone">(888)766-2615</span>
-            </div>
-            <div class="calculator">
-              <a href="#" class="calculator__link">
-                <svg class="calculator__icon">
-                  <use xlink:href="/img/sprite.svg#icon-calculator"></use>
-                </svg>
-                <span class="calculator__quantity">(2)</span>
-              </a>
-            </div>
-            <div class="cart">
-              <a href="#" class="cart__link">
-                <svg class="cart__icon">
-                  <use xlink:href="/img/sprite.svg#icon-shopping-cart"></use>
-                </svg>
-                <span class="cart__quantity">(10)</span>
-              </a>
-            </div>
-          </div>
+        </div>
+        <div class="cart">
+          <a href="#" class="cart__link">
+            <svg class="cart__icon">
+              <use xlink:href="/img/sprite.svg#icon-shopping-cart"></use>
+            </svg>
+            <span class="cart__quantity">(10)</span>
+          </a>
         </div>
       </header>
 
-      <div class="menu">
-        <nav class="navigation">
-          <ul class="top-nav">
-            <li class="top-nav__item">
-              <a href="" class="top-nav__link">
-                <span class="top-nav__span">Our</span>
-                <span class="top-nav__span top-nav__span--bold">Products</span>
-              </a>
-            </li>
-            <li class="top-nav__item">
-              <a href="" class="top-nav__link">
-                <span class="top-nav__span">Shop by</span>
-                <span class="top-nav__span top-nav__span--bold"
-                  >Application</span
-                >
-              </a>
-            </li>
-            <li class="top-nav__item">
-              <a href="" class="top-nav__link">
-                <span class="top-nav__span top-nav__span--bold">Financing</span>
-              </a>
-            </li>
-            <li class="top-nav__item">
-              <a href="" class="top-nav__link">
-                <span class="top-nav__span top-nav__span--bold">Support</span>
-              </a>
-            </li>
-            <li class="top-nav__item">
-              <a href="" class="top-nav__link">
-                <span class="top-nav__span top-nav__span--bold">Resources</span>
-              </a>
-            </li>
-            <li class="top-nav__item">
-              <a href="" class="top-nav__link">
-                <span class="top-nav__span top-nav__span--bold">Why Sonco</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <hr>
+
+      <nav class="menu">
+        <ul class="top-nav">
+          <li class="top-nav__item">
+            <a href="" class="top-nav__link">
+              <span class="top-nav__span">Our</span>
+              <span class="top-nav__span top-nav__span--bold">Products</span>
+            </a>
+          </li>
+          <li class="top-nav__item">
+            <a href="" class="top-nav__link">
+              <span class="top-nav__span">Shop by</span>
+              <span class="top-nav__span top-nav__span--bold"
+                >Application</span
+              >
+            </a>
+          </li>
+          <li class="top-nav__item">
+            <a href="" class="top-nav__link">
+              <span class="top-nav__span top-nav__span--bold">Financing</span>
+            </a>
+          </li>
+          <li class="top-nav__item">
+            <a href="" class="top-nav__link">
+              <span class="top-nav__span top-nav__span--bold">Support</span>
+            </a>
+          </li>
+          <li class="top-nav__item">
+            <a href="" class="top-nav__link">
+              <span class="top-nav__span top-nav__span--bold">Resources</span>
+            </a>
+          </li>
+          <li class="top-nav__item">
+            <a href="" class="top-nav__link">
+              <span class="top-nav__span top-nav__span--bold">Why Sonco</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
 
       <main>
         <section class="section-banner">

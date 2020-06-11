@@ -12,9 +12,23 @@ html {
 
 html {
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  // 1100px
+  @media only screen and (max-width: $bp-large)
+  {
+      font-size: 50%;
+  }
 }
 
 body {
   box-sizing: border-box;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  color: #ddd;
+  background-color: #ddd;
 }

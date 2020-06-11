@@ -1,3 +1,6 @@
+/* border-bottom solid line */
+/* box-shadows */
+/* 1em = 16px */
 html {
   box-sizing: border-box; }
 
@@ -10,10 +13,20 @@ html {
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+hr {
+  border: none;
+  height: 1px;
+  color: #ddd;
+  background-color: #ddd; }
 
 body {
   font-family: "Open-sans", sans-serif;
@@ -22,41 +35,48 @@ body {
   color: #1d2b5a; }
 
 .topbar {
-  background-color: #e74233; }
-
-.topbar-content {
   width: 100%;
   margin: 0 auto;
-  max-width: 120rem; }
+  max-width: 120rem;
+  position: relative;
+  background-color: #e74233; }
+  .topbar::before {
+    content: '';
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    transform: translateX(-50%);
+    background: #e74233; }
 
 .header {
-  display: flex;
-  height: 12.5rem;
-  align-items: center;
-  flex-direction: row;
-  border-bottom: 1px solid #f0f1f1; }
-  .header__link {
-    text-decoration: none; }
-
-.header-content {
   width: 100%;
   display: flex;
   margin: 0 auto;
+  height: 12.5rem;
   max-width: 120rem;
   align-items: center;
   flex-direction: row;
   justify-content: space-between; }
+  .header__link {
+    text-decoration: none; }
+  .header__phone {
+    width: 18rem;
+    height: auto; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      max-width: 100%; } }
 
 .container {
   width: 100%;
   display: flex;
-  min-height: 100vh;
+  min-height: 50rem;
   flex-direction: column; }
 
 .menu {
-  border-bottom: 1px solid #f0f1f1; }
-
-.navigation {
+  width: 100%;
   margin: 0 auto;
   max-width: 120rem; }
 
@@ -200,26 +220,6 @@ body {
     color: #fff;
     text-decoration: none; }
 
-.contact-cart-calc-box {
-  display: flex;
-  flex-direction: row; }
-
-.contact {
-  display: flex;
-  line-height: 2rem;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center; }
-  .contact__title {
-    font-weight: 800;
-    font-size: 1.4rem;
-    color: #032e5a;
-    text-transform: uppercase; }
-  .contact__phone {
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 0.4rem; }
-
 .cart__link,
 .calculator__link {
   display: flex;
@@ -228,7 +228,7 @@ body {
   flex-direction: column;
   justify-content: center;
   color: #e74233;
-  padding: 1rem; }
+  padding: .5rem; }
 
 .cart__icon,
 .calculator__icon {
@@ -310,7 +310,7 @@ body {
     width: 100%; }
     .stray-pictures__image--img1 {
       z-index: 2;
-      position: relative; }
+      position: absolute; }
     .stray-pictures__image--img2 {
       z-index: 1;
       right: -31.75rem;

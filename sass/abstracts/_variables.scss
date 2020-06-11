@@ -13,9 +13,25 @@ $color-gray-dark-3: #333;
 $color-white: #fff;
 $color-black: #000;
 
+/* border-bottom solid line */
 $line: 1px solid rgba(221,221,221, 0.1);
 
 $color-text: #1d2b5a;
 
+/* box-shadows */
+$shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+$shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
 // Font sizes
 $default-font-size: 1.6rem;
+
+// SASS variables for media break-points
+/* 1em = 16px */
+$bp-largest: 75em;          // 1200px
+$bp-large: 68.75em;         // 1100px
+$bp-medium-large: 62.5em;   // 1000px
+$bp-medium: 56.25em;        //  900px
+$bp-medium-small: 43.75em;  //  700px
+$bp-small: 37.5em;          //  600px
+$bp-smaller: 31.25em;       //  500px
+$bp-smallest: 25em;         //  400px
