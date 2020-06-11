@@ -1,0 +1,21 @@
+.logos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__logo {
+    width: auto;
+    height: auto;
+    margin: .8rem;
+
+    &--harley {
+      width: 10rem;
+      height: auto;
+      opacity: 0.6;
+    }
+  }
+
+}

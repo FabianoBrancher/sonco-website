@@ -3,13 +3,16 @@
   width: 17.2rem;
   height: 4.2rem;
   color: $color-white;
-  background-color: #E52333;
+  background-color: $color-primary;
   cursor: pointer;
+
+  &--red {
+    background-color: $color-secondary;
+  }
 
   &:active {
     border: none;
     outline: none;
-
   }
 
   &:focus {

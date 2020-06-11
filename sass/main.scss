@@ -3,7 +3,7 @@
 @import "base/base";
 @import "base/typography";
 
-@import "layout/about";
+@import "layout/topbar";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/container";
@@ -13,5 +13,7 @@
 @import "components/logo";
 @import "components/search";
 @import "components/navigation";
+@import "components/about";
+@import "components/logos";
 
 @import "pages/home";

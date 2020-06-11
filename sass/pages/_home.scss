@@ -109,17 +109,6 @@
   border-bottom: $line;
   background-color: $color-primary;
 
-  &__logos {
-    width: auto;
-    height: auto;
-  }
-
-  &__logos--harley {
-    width: 10rem;
-    height: auto;
-    opacity: 0.6;
-  }
-
   &__paragraph {
     opacity: 0.3;
     padding: 5rem;
@@ -131,19 +120,12 @@
 }
 
 .section-teams-content {
+  width: 100%;
   display: flex;
   margin: 0 auto;
   max-width: 120rem;
   align-items: center;
   flex-direction: column;
-}
-
-.section-teams-logos {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .section-stray {
@@ -167,28 +149,7 @@
   justify-content: space-between;
 }
 
-.stray-about {
-  flex: 0 0 33%;
-  display: flex;
-  color: $color-white;
-  flex-direction: column;
-  justify-content: space-between;
-
-  &__title {
-    font-size: 2.3rem;
-    line-height: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  &__description {
-    padding: 2.5rem 0;
-    font-size: 1.4rem;
-  }
-}
-
 .stray-pictures {
-  flex: 0 0 33%;
   display: flex;
   position: relative;
 
@@ -202,7 +163,7 @@
 
     &--img2 {
       z-index: 1;
-      right: -32rem;
+      right: -31.75rem;
       bottom: -20rem;
       position: absolute;
     }
@@ -211,8 +172,8 @@
 
 .stray-logo {
   display: flex;
-  flex: 0 0 33%;
-  padding-left: 5rem;
+  flex: 0 0 23%;
+  justify-content: center;
 
   &__logo {
     width: 18rem;

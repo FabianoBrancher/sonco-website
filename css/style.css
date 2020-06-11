@@ -21,10 +21,10 @@ body {
   font-weight: 400;
   color: #1d2b5a; }
 
-.about {
+.topbar {
   background-color: #e74233; }
 
-.about-content {
+.topbar-content {
   width: 100%;
   margin: 0 auto;
   max-width: 120rem; }
@@ -65,8 +65,10 @@ body {
   width: 17.2rem;
   height: 4.2rem;
   color: #fff;
-  background-color: #E52333;
+  background-color: #032e5a;
   cursor: pointer; }
+  .button--red {
+    background-color: #e74233; }
   .button:active {
     border: none;
     outline: none; }
@@ -146,6 +148,38 @@ body {
     text-decoration: none;
     flex-direction: column;
     padding: 1.5rem 2rem 1.5rem 0; }
+
+.about {
+  flex: 0 0 33%;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: space-between; }
+  .about__title {
+    font-size: 2.3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .about__description {
+    padding: 2.5rem 0;
+    font-size: 1.4rem; }
+
+.logos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between; }
+  .logos__logo {
+    width: auto;
+    height: auto;
+    margin: .8rem; }
+    .logos__logo--harley {
+      width: 10rem;
+      height: auto;
+      opacity: 0.6; }
 
 .list {
   display: flex;
@@ -235,13 +269,6 @@ body {
   margin-top: -0.5rem;
   border-bottom: 1px solid rgba(221, 221, 221, 0.1);
   background-color: #032e5a; }
-  .section-teams__logos {
-    width: auto;
-    height: auto; }
-  .section-teams__logos--harley {
-    width: 10rem;
-    height: auto;
-    opacity: 0.6; }
   .section-teams__paragraph {
     opacity: 0.3;
     padding: 5rem;
@@ -251,18 +278,12 @@ body {
     text-transform: uppercase; }
 
 .section-teams-content {
+  width: 100%;
   display: flex;
   margin: 0 auto;
   max-width: 120rem;
   align-items: center;
   flex-direction: column; }
-
-.section-teams-logos {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between; }
 
 .section-stray {
   width: 100%;
@@ -282,23 +303,7 @@ body {
   align-items: flex-start;
   justify-content: space-between; }
 
-.stray-about {
-  flex: 0 0 33%;
-  display: flex;
-  color: #fff;
-  flex-direction: column;
-  justify-content: space-between; }
-  .stray-about__title {
-    font-size: 2.3rem;
-    line-height: 3rem;
-    font-weight: bold;
-    text-transform: uppercase; }
-  .stray-about__description {
-    padding: 2.5rem 0;
-    font-size: 1.4rem; }
-
 .stray-pictures {
-  flex: 0 0 33%;
   display: flex;
   position: relative; }
   .stray-pictures__image {
@@ -308,14 +313,14 @@ body {
       position: relative; }
     .stray-pictures__image--img2 {
       z-index: 1;
-      right: -32rem;
+      right: -31.75rem;
       bottom: -20rem;
       position: absolute; }
 
 .stray-logo {
   display: flex;
-  flex: 0 0 33%;
-  padding-left: 5rem; }
+  flex: 0 0 23%;
+  justify-content: center; }
   .stray-logo__logo {
     width: 18rem;
     height: auto; }
