@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-right: $line-2;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: .5rem 0;
+    align-items: center;
+    flex-direction: row;
+  }
+  &__title {
+    font-size: 2rem;
+    color: $color-black;
+    text-transform: uppercase;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+  &__link {
+    display: flex;
+    padding: .5rem;
+    align-items: center;
+    border-radius: .4rem;
+    justify-content: center;
+    background: $color-black;
+
+  }
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: $color-white;
+  }
+}

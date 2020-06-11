@@ -25,6 +25,7 @@
   }
 }
 
+// HEADER CART AND CALCULATOR
 .cart,
 .calculator {
   &__link {
@@ -50,17 +51,32 @@
 }
 
 .section-banner {
+  width: 100%;
   padding-top: 1rem;
-  position: relative;
   text-align: center;
 
   &__image {
     width: 100%;
+    height: 65rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/img/banner.png');
+
+    @media only screen and (max-width: $bp-largest) {
+      background-position: center;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 120rem;
+    position: relative;
   }
 
   &__title {
     left: 0;
-    bottom: 10rem;
+    bottom: 20rem;
     line-height: 1;
     font-size: 5rem;
     text-align: start;
@@ -69,20 +85,39 @@
     color: $color-white;
     text-transform: uppercase;
   }
-}
 
-.section-banner-content {
-  position: relative;
-  max-width: 120rem;
-  width: 100%;
-  margin: 0 auto;
+  &__logos {
+    position: absolute;
+    left: 0;
+    bottom: 10rem;
+  }
+
+  &__logo {
+    padding: 1rem;
+  }
 }
 
 .section-teams {
-  padding: 10rem 0;
-  margin-top: -0.5rem;
-  border-bottom: $line;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  padding: 5rem 0;
+  max-width: 120rem;
+  align-items: center;
+  flex-direction: column;
   background-color: $color-primary;
+
+  &::before {
+    content: "";
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    transform: translateX(-50%);
+    background: $color-primary;
+  }
 
   &__paragraph {
     opacity: 0.3;
@@ -94,29 +129,31 @@
   }
 }
 
-.section-teams-content {
-  width: 100%;
-  display: flex;
-  margin: 0 auto;
-  max-width: 120rem;
-  align-items: center;
-  flex-direction: column;
-}
-
 .section-stray {
   width: 100%;
-  background-color: $color-primary;
-}
-
-.section-stray-content {
-  margin: 0 auto;
   display: flex;
+  margin: 0 auto;
   max-width: 120rem;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
+  background-color: $color-primary;
+
+  &::before {
+    content: "";
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    transform: translateX(-50%);
+    background: $color-primary;
+  }
 }
 
 .stray-info {
+  position: relative;
   display: flex;
   padding-top: 10rem;
   flex-direction: row;
@@ -127,19 +164,19 @@
 .stray-pictures {
   display: flex;
   position: relative;
+  margin: 0 7rem 0 5rem;
 
   &__image {
-    width: 100%;
 
     &--img1 {
+      position: relative;
       z-index: 2;
-      position: absolute;
     }
 
     &--img2 {
       z-index: 1;
-      right: -31.75rem;
-      bottom: -20rem;
+      top: 16rem;
+      right: -32rem;
       position: absolute;
     }
   }
@@ -147,7 +184,7 @@
 
 .stray-logo {
   display: flex;
-  flex: 0 0 23%;
+  padding: 0 2rem;
   justify-content: center;
 
   &__logo {
@@ -162,3 +199,25 @@
   flex-direction: row;
 }
 
+.newsletter {
+  display: flex;
+  height: 20rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  max-width: 120rem;
+  position: relative;
+  justify-content: space-between;
+  background-color: $color-tertiary;
+
+  &::before {
+    content: '';
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    transform: translateX(-50%);
+    background: $color-tertiary;
+  }
+}

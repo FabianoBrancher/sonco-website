@@ -6,6 +6,10 @@
   flex-direction: row;
   justify-content: space-between;
 
+  @media only screen and (max-width: $bp-largest) {
+    justify-content: flex-start;
+  }
+
   &__logo {
     width: auto;
     height: auto;

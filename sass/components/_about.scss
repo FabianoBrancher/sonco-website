@@ -1,5 +1,5 @@
 .about {
-  flex: 0 0 33%;
+  flex: 1;
   display: flex;
   color: $color-white;
   flex-direction: column;
@@ -11,10 +11,35 @@
     line-height: 3rem;
     font-weight: bold;
     text-transform: uppercase;
+
+    &--newsletter {
+      font-size: 2rem;
+    }
+
+    &--newsletter {
+      &::before {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        mask-size: cover;
+        transition: all 0.8s;
+        display: inline-block;
+        transform: rotate(0deg);
+        -webkit-mask-size: cover;
+        background-color: $color-black;
+        mask-image: url(/img/calculator.svg);
+        -webkit-mask-image: url(/img/calculator.svg);
+      }
+      color: $color-black;
+    }
   }
 
   &__description {
-    padding: 2.5rem 0;
     font-size: 1.4rem;
+    padding: 1rem 0 1.5rem 0;
+
+    &--newsletter {
+      color: $color-gray-dark-2;
+    }
   }
 }

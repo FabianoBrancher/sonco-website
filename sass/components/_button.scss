@@ -3,12 +3,9 @@
   width: 17.2rem;
   height: 4.2rem;
   color: $color-white;
-  background-color: $color-primary;
-  cursor: pointer;
+  background-color: $color-secondary;
 
-  &--red {
-    background-color: $color-secondary;
-  }
+  cursor: pointer;
 
   &:active {
     border: none;
