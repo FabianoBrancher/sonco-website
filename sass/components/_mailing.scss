@@ -4,13 +4,42 @@
   border-right: $line-2;
   margin-right: 4rem;
 
-  &__title {}
+  &__form {
+    display: flex;
+  }
 
-  &__input {}
+  &__title {
+    font-size: 2rem;
+    color: $color-black;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+  }
 
-  &__button {}
+  &__input {
+    width: 100%;
+    border: none;
+    color: inherit;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    background-color: $color-white;
 
-  &__qa {}
+    &:focus {
+      outline: none;
+    }
+  }
 
-  &__letusnow {}
+  &__qa {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    color: $color-gray-dark-3;
+  }
+
+  &__letusknow {
+    color: $color-gray-dark-1;
+    font-size: 1.2rem;
+
+  }
 }

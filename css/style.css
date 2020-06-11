@@ -85,6 +85,7 @@ body {
   border: none;
   width: 17.2rem;
   height: 4.2rem;
+  font-weight: bold;
   color: #fff;
   background-color: #e74233;
   cursor: pointer; }
@@ -255,6 +256,32 @@ body {
   padding: 0 8rem;
   border-right: 1px solid #dddddd;
   margin-right: 4rem; }
+  .mailing__form {
+    display: flex; }
+  .mailing__title {
+    font-size: 2rem;
+    color: #000;
+    padding-bottom: 1rem;
+    text-transform: uppercase; }
+  .mailing__input {
+    width: 100%;
+    border: none;
+    color: inherit;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    background-color: #fff; }
+    .mailing__input:focus {
+      outline: none; }
+  .mailing__qa {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    color: #333; }
+  .mailing__letusknow {
+    color: #777;
+    font-size: 1.2rem; }
 
 .list {
   display: flex;
