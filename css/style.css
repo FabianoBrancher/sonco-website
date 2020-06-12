@@ -460,15 +460,20 @@ body {
     @media only screen and (max-width: 75em) {
       .section-banner__image {
         max-width: 100%;
-        background-position: center; } }
-  @media only screen and (max-width: 56.25em) {
-    .section-banner {
-      display: none; } }
+        height: 40rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .section-banner__image {
+        background-position: left center;
+        height: 30rem; } }
   .section-banner__content {
     height: 100%;
     margin: 0 auto;
     max-width: 120rem;
     position: relative; }
+    @media only screen and (max-width: 75em) {
+      .section-banner__content {
+        width: 100%;
+        max-width: 100%; } }
   .section-banner__title {
     left: 0;
     bottom: 20rem;
@@ -479,12 +484,26 @@ body {
     position: absolute;
     color: #fff;
     text-transform: uppercase; }
+    @media only screen and (max-width: 75em) {
+      .section-banner__title {
+        bottom: 10rem;
+        font-size: 3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .section-banner__title {
+        font-size: 2rem; } }
   .section-banner__logos {
     position: absolute;
     left: 0;
     bottom: 10rem; }
+    @media only screen and (max-width: 75em) {
+      .section-banner__logos {
+        bottom: 2rem; } }
   .section-banner__logo {
     padding: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section-banner__logo {
+        width: 10rem;
+        height: auto; } }
 
 .section-teams {
   position: relative;
@@ -498,7 +517,8 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-teams {
       width: 100%;
-      max-width: 100%; } }
+      max-width: 100%;
+      padding: 5rem 3rem; } }
   .section-teams::before {
     content: "";
     top: 0;
@@ -540,7 +560,8 @@ body {
     .section-stray {
       max-width: 100%;
       flex-direction: column;
-      justify-content: center; } }
+      justify-content: center;
+      padding: 5rem 0; } }
   .section-stray::before {
     content: "";
     top: 0;
