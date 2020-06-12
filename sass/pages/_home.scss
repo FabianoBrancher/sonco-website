@@ -1,7 +1,15 @@
 .mobile-menu {
+  display: none;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+  }
+
   &__icon {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 5rem;
+    height: 5rem;
+    fill: $color-secondary;
+    padding: 0 1rem;
   }
 }
 
@@ -37,12 +45,12 @@
 .calculator {
   &__link {
     display: flex;
+    padding: .5rem;
     align-items: center;
     text-decoration: none;
     flex-direction: column;
     justify-content: center;
     color: $color-secondary;
-    padding: .5rem;
   }
 
   &__icon {
@@ -80,7 +88,6 @@
     }
   }
 
-
   &__content {
     height: 100%;
     margin: 0 auto;
@@ -106,10 +113,12 @@
 
     @media only screen and (max-width: $bp-largest) {
       bottom: 10rem;
+      left: 2rem;
       font-size: 3rem;
     }
 
     @media only screen and (max-width: $bp-medium) {
+      left: 2rem;
       font-size: 2rem;
     }
 
@@ -121,7 +130,11 @@
     bottom: 10rem;
 
     @media only screen and (max-width: $bp-largest) {
+      left: 1rem;
       bottom: 2rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      left: 2rem;
     }
 
   }

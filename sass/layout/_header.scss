@@ -13,7 +13,8 @@
   }
 
   @media only screen and (max-width: $bp-medium) {
-    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 6rem;
   }
 
   &__link {
@@ -23,13 +24,77 @@
   &__phone {
     width: 18rem;
     height: auto;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+
+    &--icon {
+      @media only screen and (max-width: $bp-medium) {
+        display: flex;
+      }
+    }
+
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    fill: $color-secondary;
+    padding: 0 1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+    }
+
+    &--mobile {
+      padding: 0;
+      display: none;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: block;
+      }
+    }
+
+  }
+
+  &__hr {
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
   }
 
 }
 
+.logo {
+  width: 17.5rem;
+  height: auto;
 
+  @media only screen and (max-width: $bp-medium) {
+    width: 12rem;
+  }
+}
 
+.est-logo {
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}
 
+.calc-cart-div {
+  display: flex;
+}
+
+.logo-div {
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 
 

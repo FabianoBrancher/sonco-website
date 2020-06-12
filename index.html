@@ -34,12 +34,19 @@
           </svg>
         </div>
 
+        <a href="#" class="header__icon header__icon--mobile">
+          <svg class="header__icon">
+            <use xlink:href="/img/sprite.svg#icon-phone"></use>
+          </svg>
         </a>
 
-        <a href="#" class="header__link">
-          <img src="/img/logo-sonco.png" alt="Logo Sonco" class="logo" />
-        </a>
-        <img src="/img/est-1976.png" alt="est-1976" />
+        <div class="logo-div">
+          <a href="#" class="header__link">
+            <img src="/img/logo-sonco.png" alt="Logo Sonco" class="logo" />
+          </a>
+        </div>
+
+        <img src="/img/est-1976.png" alt="est-1976" class="est-logo" />
 
         <form action="#" class="search">
           <input type="text" class="search__input" placeholder="Search" />
@@ -50,26 +57,35 @@
           </button>
         </form>
 
+        <a href="#" class="header__icon header__icon--mobile">
+          <svg class="header__icon">
+            <use xlink:href="/img/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </a>
         <img src="img/phone.png" alt="Call for special deals" class="header__phone"/>
-        <div class="calculator">
-          <a href="#" class="calculator__link">
-            <svg class="calculator__icon">
-              <use xlink:href="/img/sprite.svg#icon-calculator"></use>
-            </svg>
-            <span class="calculator__quantity">(2)</span>
-          </a>
-        </div>
-        <div class="cart">
-          <a href="#" class="cart__link">
-            <svg class="cart__icon">
-              <use xlink:href="/img/sprite.svg#icon-shopping-cart"></use>
-            </svg>
-            <span class="cart__quantity">(10)</span>
-          </a>
+
+        <div class="calc-cart-div">
+          <div class="calculator">
+            <a href="#" class="calculator__link">
+              <svg class="calculator__icon">
+                <use xlink:href="/img/sprite.svg#icon-calculator"></use>
+              </svg>
+              <span class="calculator__quantity">(2)</span>
+            </a>
+          </div>
+          <div class="cart">
+            <a href="#" class="cart__link">
+              <svg class="cart__icon">
+                <use xlink:href="/img/sprite.svg#icon-shopping-cart"></use>
+              </svg>
+              <span class="cart__quantity">(10)</span>
+            </a>
+          </div>
+
         </div>
       </header>
 
-      <hr>
+      <hr class="header__hr">
 
       <ul class="sidemenu">
         <li class="sidemenu__item">
