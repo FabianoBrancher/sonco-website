@@ -4,6 +4,11 @@
   flex-direction: column;
   border-right: $line-2;
 
+  @media only screen and (max-width: $bp-medium) {
+    align-items: center;
+    border-right: 0;
+  }
+
   &__list {
     display: flex;
     list-style: none;

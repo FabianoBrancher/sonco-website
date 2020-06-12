@@ -5,6 +5,10 @@
   flex-direction: row;
   justify-content: flex-start;
 
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+
   &__item {
     display: flex;
     position: relative;

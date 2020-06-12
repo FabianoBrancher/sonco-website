@@ -1,5 +1,4 @@
 .logos {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -8,12 +7,18 @@
 
   @media only screen and (max-width: $bp-largest) {
     justify-content: flex-start;
+    padding: 0 2rem;
   }
 
   &__logo {
     width: auto;
     height: auto;
     margin: .8rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 8rem;
+      height: auto;
+    }
 
     &--harley {
       width: 10rem;

@@ -8,6 +8,14 @@
   flex-direction: row;
   justify-content: space-between;
 
+  @media only screen and (max-width: $bp-largest) {
+    max-width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-wrap: wrap;
+  }
+
   &__link {
     text-decoration: none;
   }
@@ -17,9 +25,6 @@
     height: auto;
   }
 
-  @media only screen and (max-width: $bp-largest) {
-    max-width: 100%;
-  }
 }
 
 
