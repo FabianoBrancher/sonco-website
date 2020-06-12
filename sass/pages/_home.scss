@@ -27,7 +27,6 @@
   }
 
   &__item--bgblue {
-    text-transform: uppercase;
     background-color: $color-primary;
   }
 
@@ -151,11 +150,11 @@
 }
 
 .section-teams {
-  position: relative;
   display: flex;
   margin: 0 auto;
   padding: 5rem 0;
   max-width: 120rem;
+  position: relative;
   align-items: center;
   flex-direction: column;
   background-color: $color-primary;
@@ -181,8 +180,7 @@
   &__paragraph {
     opacity: 0.3;
     padding: 5rem;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2rem;
     color: $color-white;
     text-transform: uppercase;
 
@@ -195,7 +193,7 @@
     }
 
     @media only screen and (max-width: $bp-small) {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
   }
 }
@@ -271,8 +269,8 @@
   &__image {
 
     &--img1 {
-      position: relative;
       z-index: 2;
+      position: relative;
     }
 
     &--img2 {
@@ -348,6 +346,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding: 2rem 2rem;
   }
 
   &::before {

@@ -5,6 +5,11 @@
   flex-direction: row;
   justify-content: flex-start;
 
+  @media only screen and (max-width: $bp-largest) {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+
   @media only screen and (max-width: $bp-medium) {
     display: none;
   }

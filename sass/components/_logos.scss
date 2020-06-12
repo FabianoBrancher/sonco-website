@@ -11,12 +11,16 @@
   }
 
   &__logo {
-    width: auto;
     height: auto;
     margin: .8rem;
 
     @media only screen and (max-width: $bp-medium) {
       width: 8rem;
+      height: auto;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 6rem;
       height: auto;
     }
 

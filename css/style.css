@@ -162,7 +162,7 @@ body {
   cursor: pointer; }
   @media only screen and (max-width: 56.25em) {
     .button {
-      width: 17rem;
+      width: 17.2rem;
       font-size: 1.4rem; } }
   .button--newsletter {
     width: 12rem;
@@ -214,6 +214,10 @@ body {
   font-size: 1.2rem;
   flex-direction: row;
   justify-content: flex-start; }
+  @media only screen and (max-width: 75em) {
+    .top-nav {
+      padding: 0 2rem;
+      max-width: 100%; } }
   @media only screen and (max-width: 56.25em) {
     .top-nav {
       display: none; } }
@@ -308,12 +312,15 @@ body {
       justify-content: flex-start;
       padding: 0 2rem; } }
   .logos__logo {
-    width: auto;
     height: auto;
     margin: .8rem; }
     @media only screen and (max-width: 56.25em) {
       .logos__logo {
         width: 8rem;
+        height: auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .logos__logo {
+        width: 6rem;
         height: auto; } }
     .logos__logo--harley {
       width: 10rem;
@@ -440,7 +447,10 @@ body {
   .links__link {
     font-size: 1.2rem;
     text-decoration: none;
-    color: #999; }
+    color: #999;
+    transition: all .3s; }
+    .links__link:hover {
+      color: #e74233; }
 
 .contact {
   flex: 0 0 23%;
@@ -465,7 +475,10 @@ body {
     font-size: 1.2rem;
     align-items: center;
     text-decoration: none;
-    color: #999; }
+    color: #999;
+    transition: all .3s; }
+    .contact__link:hover {
+      color: #e74233; }
   .contact__icon {
     width: 1.5rem;
     height: 1.5rem;
@@ -576,7 +589,6 @@ body {
     height: 3.5rem;
     align-items: center; }
   .list__item--bgblue {
-    text-transform: uppercase;
     background-color: #032e5a; }
   .list__link {
     padding: 0 2rem;
@@ -671,11 +683,11 @@ body {
         height: auto; } }
 
 .section-teams {
-  position: relative;
   display: flex;
   margin: 0 auto;
   padding: 5rem 0;
   max-width: 120rem;
+  position: relative;
   align-items: center;
   flex-direction: column;
   background-color: #032e5a; }
@@ -697,8 +709,7 @@ body {
   .section-teams__paragraph {
     opacity: 0.3;
     padding: 5rem;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2rem;
     color: #fff;
     text-transform: uppercase; }
     @media only screen and (max-width: 56.25em) {
@@ -710,7 +721,7 @@ body {
         font-size: 2rem; } }
     @media only screen and (max-width: 37.5em) {
       .section-teams__paragraph {
-        font-size: 1.4rem; } }
+        font-size: 1.2rem; } }
 
 .section-stray {
   width: 100%;
@@ -768,8 +779,8 @@ body {
     .stray-pictures {
       display: none; } }
   .stray-pictures__image--img1 {
-    position: relative;
-    z-index: 2; }
+    z-index: 2;
+    position: relative; }
   .stray-pictures__image--img2 {
     z-index: 1;
     top: 16rem;
@@ -829,7 +840,8 @@ body {
       max-width: 100%;
       align-items: center;
       flex-direction: column;
-      justify-content: center; } }
+      justify-content: center;
+      padding: 2rem 2rem; } }
   .newsletter::before {
     content: '';
     top: 0;

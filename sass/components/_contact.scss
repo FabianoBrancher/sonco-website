@@ -26,6 +26,11 @@
     align-items: center;
     text-decoration: none;
     color: $color-gray-dark-2;
+    transition: all .3s;
+
+    &:hover {
+      color: $color-secondary;
+    }
   }
 
   &__icon {
