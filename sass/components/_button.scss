@@ -1,10 +1,22 @@
 .button {
   border: none;
   width: 17.2rem;
-  height: 4.2rem;
+  padding: 1.5rem;
   font-weight: bold;
   color: $color-white;
+  transition: all .6s;
+  align-self: flex-start;
   background-color: $color-secondary;
+
+  @media only screen and (max-width: $bp-medium){
+    width: 17rem;
+    font-size: 1.4rem;
+  }
+
+  &--newsletter {
+    width: 12rem;
+    align-self: center;
+  }
 
   cursor: pointer;
 
@@ -16,5 +28,9 @@
   &:focus {
     border: none;
     outline: none;
+  }
+
+  &:hover {
+    background-color: darken($color: $color-secondary, $amount: 20%);
   }
 }

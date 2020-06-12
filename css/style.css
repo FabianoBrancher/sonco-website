@@ -152,17 +152,28 @@ body {
 .button {
   border: none;
   width: 17.2rem;
-  height: 4.2rem;
+  padding: 1.5rem;
   font-weight: bold;
   color: #fff;
+  transition: all .6s;
+  align-self: flex-start;
   background-color: #e74233;
   cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .button {
+      width: 17rem;
+      font-size: 1.4rem; } }
+  .button--newsletter {
+    width: 12rem;
+    align-self: center; }
   .button:active {
     border: none;
     outline: none; }
   .button:focus {
     border: none;
     outline: none; }
+  .button:hover {
+    background-color: #a11f13; }
 
 .search {
   flex: 0 0 50%;
