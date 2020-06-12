@@ -3,12 +3,17 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  flex-direction: row;
   border-left: $line;
+  flex-direction: row;
 
   @media only screen and (max-width: $bp-largest) {
-    max-width: 100%;
     padding: 2rem;
+    max-width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 0;
+    padding: 2rem 0;
   }
 
   &__item {
@@ -16,9 +21,8 @@
     padding-left: 5rem;
 
     @media only screen and (max-width: $bp-largest) {
-      flex: 0 0 50%;
+      flex: 0 0 45;
     }
-
   }
 
   &__link {

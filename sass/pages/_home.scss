@@ -221,11 +221,22 @@
   justify-content: space-between;
 
   @media only screen and (max-width: $bp-largest) {
-    flex-direction: column;
+    padding-top: 7rem;
     max-width: 100%;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-top: 2rem;
+  }
+
+
+  @media only screen and (max-width: $bp-small) {
+    padding-top: 0rem;
+  }
+
 }
 
 .stray-pictures {
