@@ -634,8 +634,7 @@ body {
 .clients-pictures {
   display: flex;
   position: relative;
-  margin: 0 7rem 0 1rem;
-  border: 1px solid red; }
+  margin: 0 7rem 0 1rem; }
   @media only screen and (max-width: 75em) {
     .clients-pictures {
       display: none; } }
