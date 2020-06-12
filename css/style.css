@@ -261,6 +261,8 @@ body {
   color: #fff;
   flex-direction: column;
   justify-content: space-between; }
+  .about--harley {
+    color: #032e5a; }
   @media only screen and (max-width: 75em) {
     .about {
       order: 3;
@@ -568,6 +570,122 @@ body {
   display: flex;
   flex-direction: column; }
 
+.clients-section {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 120rem;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #032e5a; }
+  .clients-section--harley, .clients-section--woodstock, .clients-section--titans {
+    background-color: #fff; }
+  .clients-section--stray::before {
+    content: "";
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    transform: translateX(-50%);
+    background: #032e5a; }
+  .clients-section--milhaus::before, .clients-section--whitehouse::before, .clients-section--whitingturner::before {
+    content: "";
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    transform: translateX(-50%);
+    background: #efebe8; }
+  @media only screen and (max-width: 75em) {
+    .clients-section {
+      max-width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 0; } }
+
+.clients-info {
+  color: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 10rem;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; }
+  @media only screen and (max-width: 75em) {
+    .clients-info {
+      padding-top: 7rem;
+      max-width: 100%;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; } }
+  @media only screen and (max-width: 56.25em) {
+    .clients-info {
+      padding-top: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .clients-info {
+      padding-top: 0rem; } }
+
+.clients-pictures {
+  display: flex;
+  position: relative;
+  margin: 0 7rem 0 1rem;
+  border: 1px solid red; }
+  @media only screen and (max-width: 75em) {
+    .clients-pictures {
+      display: none; } }
+  .clients-pictures__image--img1 {
+    z-index: 2;
+    position: relative; }
+  .clients-pictures__image--img2 {
+    z-index: 1;
+    top: 16rem;
+    right: -32rem;
+    position: absolute; }
+
+.clients-logo {
+  display: flex;
+  padding: 0 2rem;
+  justify-content: center; }
+  @media only screen and (max-width: 75em) {
+    .clients-logo {
+      max-width: 100%;
+      align-items: center;
+      justify-content: center;
+      order: 1; } }
+  .clients-logo__logo {
+    width: 18rem;
+    height: auto; }
+
+.clients-video {
+  position: relative;
+  display: flex;
+  padding: 3.5rem 0; }
+  @media only screen and (max-width: 75em) {
+    .clients-video {
+      max-width: 100%;
+      align-items: center;
+      justify-content: center;
+      order: 2; } }
+  .clients-video__video {
+    width: 76rem;
+    height: 40rem; }
+    @media only screen and (max-width: 56.25em) {
+      .clients-video__video {
+        width: 50rem;
+        height: 30rem;
+        max-width: 100%; } }
+    @media only screen and (max-width: 37.5em) {
+      .clients-video__video {
+        width: 100%;
+        height: auto;
+        max-width: 100%; } }
+
 .mobile-menu {
   display: none; }
   @media only screen and (max-width: 56.25em) {
@@ -722,108 +840,6 @@ body {
     @media only screen and (max-width: 37.5em) {
       .section-teams__paragraph {
         font-size: 1.2rem; } }
-
-.section-stray {
-  width: 100%;
-  display: flex;
-  margin: 0 auto;
-  max-width: 120rem;
-  position: relative;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #032e5a; }
-  @media only screen and (max-width: 75em) {
-    .section-stray {
-      max-width: 100%;
-      flex-direction: column;
-      justify-content: center;
-      padding: 5rem 0; } }
-  .section-stray::before {
-    content: "";
-    top: 0;
-    left: 50%;
-    z-index: -1;
-    height: 100%;
-    width: 100vw;
-    position: absolute;
-    transform: translateX(-50%);
-    background: #032e5a; }
-
-.stray-info {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  padding-top: 10rem;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between; }
-  @media only screen and (max-width: 75em) {
-    .stray-info {
-      padding-top: 7rem;
-      max-width: 100%;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center; } }
-  @media only screen and (max-width: 56.25em) {
-    .stray-info {
-      padding-top: 2rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .stray-info {
-      padding-top: 0rem; } }
-
-.stray-pictures {
-  display: flex;
-  position: relative;
-  margin: 0 7rem 0 1rem; }
-  @media only screen and (max-width: 75em) {
-    .stray-pictures {
-      display: none; } }
-  .stray-pictures__image--img1 {
-    z-index: 2;
-    position: relative; }
-  .stray-pictures__image--img2 {
-    z-index: 1;
-    top: 16rem;
-    right: -32rem;
-    position: absolute; }
-
-.stray-logo {
-  display: flex;
-  padding: 0 2rem;
-  justify-content: center; }
-  @media only screen and (max-width: 75em) {
-    .stray-logo {
-      max-width: 100%;
-      align-items: center;
-      justify-content: center;
-      order: 1; } }
-  .stray-logo__logo {
-    width: 18rem;
-    height: auto; }
-
-.stray-video {
-  position: relative;
-  display: flex;
-  padding: 3.5rem 0; }
-  @media only screen and (max-width: 75em) {
-    .stray-video {
-      max-width: 100%;
-      align-items: center;
-      justify-content: center;
-      order: 2; } }
-  .stray-video__video {
-    width: 76rem;
-    height: 40rem; }
-    @media only screen and (max-width: 56.25em) {
-      .stray-video__video {
-        width: 50rem;
-        height: 30rem;
-        max-width: 100%; } }
-    @media only screen and (max-width: 37.5em) {
-      .stray-video__video {
-        width: 100%;
-        height: auto;
-        max-width: 100%; } }
 
 .newsletter {
   display: flex;
