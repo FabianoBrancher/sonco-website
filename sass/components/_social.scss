@@ -4,6 +4,7 @@
   flex-direction: column;
   border-right: $line-2;
 
+
   @media only screen and (max-width: $bp-medium) {
     align-items: center;
     border-right: 0;
@@ -32,12 +33,17 @@
     align-items: center;
     border-radius: .4rem;
     justify-content: center;
+    color: $color-white;
     background: $color-black;
 
+    &--sidemenu {
+      color: $color-primary;
+      background: $color-white-opacity;
+    }
   }
   &__icon {
     width: 1.75rem;
     height: 1.75rem;
-    fill: $color-white;
+    fill: currentColor;
   }
 }

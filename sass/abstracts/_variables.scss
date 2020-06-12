@@ -11,18 +11,19 @@ $color-gray-dark-2: #999;
 $color-gray-dark-3: #333;
 
 $color-white: #fff;
+$color-white-opacity: rgba(255, 255, 255, .6);
 $color-black: #000;
-
 
 /* border-bottom solid line */
 $line: 1px solid rgba(221,221,221, 0.8);
 $line-2: 1px solid #dddddd;
+$side-menu-border: 1px solid #113274;
 
 $color-text: #1d2b5a;
 
 /* box-shadows */
 $shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
-$shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+$shadow-light: 0 0 1rem 0 rgba(0,0,0,.06);
 
 // Font sizes
 $default-font-size: 1.6rem;

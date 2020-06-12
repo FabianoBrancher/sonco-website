@@ -1,0 +1,117 @@
+.sidemenu {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  list-style: none;
+  align-items: stretch;
+  flex-direction: column;
+  box-shadow: $shadow-light;
+  transform: translateX(-100%);
+  background-color: $color-primary;
+  transition: transform .4s ease-in;
+
+  &--open {
+    transform: translateX(0);
+  }
+
+  &__item {
+    display: flex;
+    font-size: 1.6rem;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-bottom: $side-menu-border;
+    }
+
+    &--phone {
+      font-size: 2.5rem;
+    }
+
+    &--social {
+      padding: 2rem 4rem ;
+    }
+
+    span {
+      &::before {
+        content: "";
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: .8rem;
+        display: inline-block;
+      }
+    }
+
+    strong {
+      font-weight: 100;
+
+      &::before {
+        content: "";
+        width: 1.5rem;
+        height: 1.5rem;
+        mask-size: cover;
+        margin-right: .8rem;
+        display: inline-block;
+        -webkit-mask-size: cover;
+        background-color: $color-white;
+        mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+      }
+    }
+  }
+
+  &__link,
+  &__link:visited {
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    position: relative;
+    color: $color-white;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 2rem;
+    text-decoration: none;
+  }
+
+  &__link {
+    &--register,
+    &--signin {
+      height: 100%;
+      flex: 0 0 40%;
+      padding: 1.5rem 0;
+      justify-content: center;
+      border-right: $side-menu-border;
+    }
+
+    &--close {
+      flex: 0 0 20%;
+      justify-content: center;
+    }
+  }
+
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $color-white;
+
+    &--phone {
+      width: 4rem;
+      height: 4rem;
+      padding: .5rem;
+      border-radius: 6px;
+      color: currentColor;
+      background-color: #25D366;
+    }
+  }
+}
+
+.sidemenu-column-div {
+  flex: 0 0 70%;
+  display: flex;
+  flex-direction: column;
+}

@@ -8,17 +8,12 @@
 
   @media only screen and (max-width: $bp-largest) {
     order: 3;
-    padding: 1rem 2rem;
+    padding: 2rem;
     align-items: center;
   }
 
   @media only screen and (max-width: $bp-small) {
-    flex: 1;
-    order: 3;
-    width: 100%;
-    padding: 2rem;
-    max-width: 100%;
-    align-items: center;
+    padding: 1rem;
   }
 
   &__title {
@@ -29,6 +24,12 @@
 
     &--newsletter {
       font-size: 2rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+      }
     }
 
     &--newsletter {
